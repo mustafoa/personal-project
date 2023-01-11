@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+}
+
+.tt{
+    padding: 20px;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+/* html, body{
+    overflow-x: hidden;
+} */
+
+/* cursor */
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid blue;
+}
+
+/* pre loader */
+.page-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease;
+}
+
+.page-loader.fade-out{
+    opacity: 0;
+}
+
+.page-loader div{
+    border: 2px solid transparent;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    border-top-color: transparent!important;
+    border-bottom-color: transparent!important;
+    animation: spin 1s linear infinite;
+}
+
+.page-loader div:nth-child(1){
+    height: 60px;
+    width: 60px;
+    border-color: #e02f6b;
+}
+
+.page-loader div:nth-child(2){
+    height: 45px;
+    width: 45px;
+    border-color: #0000ff;
+    animation-duration: 1.2s;
+}
+
+.page-loader div:nth-child(3){
+    height: 30px;
+    width: 30px;
+    border-color: #ffa500;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Weather Start */
+.weatherWidget .visualcrossing-wx-widget .title {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    text-align: center;
+}
+
+.weatherWidget .visualcrossing-wx-widget {
+    background-color: #1f567c;
+    color: white;
+    font-size: 10px;
+}
+
+.weatherWidget .visualcrossing-wx-widget .period .date {
+    font-size: 10px;
+}
+
+.weatherWidget{
+    background-color: none!important;
+    width: 500px;
+    margin: auto;
+    height: 95px;
+    position: absolute;
+    top: 100px;
+    padding: 0px 30px;
+}
+
+/* Nav */
+.nav .navbar .container-fluid .navbar-brand img{
+    max-width: 65px;
+    max-height: 70px;
+}
+.nav .navbar .container-fluid .navbar-brand{
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.nav .navbar .navbar-nav li a{
+    color: #000;
+}
+.nav .navbar .navbar-nav li a:hover{
+    transition: .7s;
+    color: red;
+    text-decoration: underline;
+}
+/* Header */
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: url(img/futbol.jpg) no-repeat center center / cover;
+}
+
+.section1 .container .row .navbar .container-fluid .navbar-brand img{
+    max-width: 65px;
+    max-height: 70px;
+}
+
+.section1 .container .row .navbar .container-fluid .navbar-brand{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.section1 .navbar .navbar-nav li a{
+    color: white;
+}
+
+.section1 .navbar .navbar-nav li a:hover{
+    transition: .7s;
+    color: red;
+    text-decoration: underline;
+}
+
+.section1 header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.section1 header h1{
+    
+    color: white;
+    text-shadow: 0 0 30px lightgreen;
+    font-size: 50px;
+}
+
+/* Section2 */
+.section2 .col-12 .about h2{
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.owl-carousel .card img{
+    min-height: 350px;
+    max-height: 620px;
+}
+
+.owl-carousel .card h5{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Section3 */
+.section3 .container h3{
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.section3 .about p{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: justify;
+}
+
+.section3 .about a:hover{
+    text-decoration: underline!important;
+    color: #0D6EFD!important;
+    transition: 0.2s;
+}
+.section3 .row .card img{
+    min-width: 240px;
+    max-width: 240px;
+    min-height: 280px;
+    max-height: 280px;
+}
+.section3 .row .card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/* Section4 */
+.section4 .container h3{
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.section4 .about p{
+    font-size: 15px;
+    font-family: monospace;
+    text-align: justify;
+}
+.section4 .about img{
+    max-width: 416px;
+    max-height: 324px;
+}
