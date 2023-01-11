@@ -255,16 +255,25 @@
     transition: 0.2s;
 }
 .section3 .row .card img{
+    margin: auto;
     min-width: 240px;
     max-width: 240px;
     min-height: 280px;
     max-height: 280px;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
 }
 .section3 .row .card{
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
 }
 /* Section4 */
 .section4 .container h3{
